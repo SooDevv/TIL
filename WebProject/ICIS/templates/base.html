@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ICIS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon
+		============================================ -->
+		<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+		<!-- Fonts
+		============================================ -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel='stylesheet' type='text/css'>
+
+ 		<!-- CSS  -->
+
+		<!-- Bootstrap CSS
+		============================================ -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+		<!-- owl.carousel CSS
+		============================================ -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+
+		<!-- owl.theme CSS
+		============================================ -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.css') }}">
+
+		<!-- owl.transitions CSS
+		============================================ -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.transitions.css') }}">
+
+		<!-- font-awesome.min CSS
+		============================================ -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+
+		<!-- font-icon CSS
+		============================================ -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='fonts/font-icon.css') }}">
+
+ 		<!-- animate CSS
+		============================================ -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+
+		<!-- mobile menu CSS
+		============================================ -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.min.css') }}">
+
+ 		<!-- normalize CSS
+		============================================ -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+
+        <!-- main CSS
+		============================================ -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+        <!-- style CSS
+		============================================ -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+        <!-- responsive CSS
+		============================================ -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+        <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3.min.js') }}"></script>
+    </head>
+
+    <body{% block body_attribs %}{% endblock body_attribs %}>
+        {% block header %}
+            {% include 'navibar.html' %}
+        {% endblock header %}
+
+        {% block content %}
+        {% endblock content %}
+
+		<!-- FOOTER START -->
+		<footer>
+			<!-- top footer area start -->
+			<div class="top-footer-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<div class="single-snap-footer">
+								<div class="snap-footer-title">
+									<h4>Company info</h4>
+								</div>
+								<div class="cakewalk-footer-content">
+									<p class="footer-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim adm.</p>
+									<a href="#" class="read-more">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-snap-footer">
+								<div class="snap-footer-title">
+									<h4>Information</h4>
+								</div>
+								<div class="cakewalk-footer-content">
+									<ul>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Careers</a></li>
+										<li><a href="#">Delivery Information</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+										<li><a href="#">Terms & Condition</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<div class="single-snap-footer">
+								<div class="snap-footer-title">
+									<h4>Fashion Tags</h4>
+								</div>
+								<div class="cakewalk-footer-content">
+									<ul>
+										<li><a href="#">My Account</a></li>
+										<li><a href="#">Login</a></li>
+										<li><a href="#">My Cart</a></li>
+										<li><a href="#">Wishlist</a></li>
+										<li><a href="#">Checkout</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 hidden-sm">
+							<div class="single-snap-footer">
+								<div class="snap-footer-title">
+									<h4>Fashion Tags</h4>
+								</div>
+								<div class="cakewalk-footer-content">
+									<ul>
+										<li><a href="#">Sitemap</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+										<li><a href="#">Advanced Search</a></li>
+										<li><a href="#">Affiliates</a></li>
+										<li><a href="#">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 hidden-sm">
+							<div class="single-snap-footer">
+								<div class="snap-footer-title">
+									<h4>Follow Us</h4>
+								</div>
+								<div class="cakewalk-footer-content social-footer">
+									<ul>
+										<li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a><span> Facebook</span></li>
+										<li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a><span> Google Plus</span></li>
+										<li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a><span> Twitter</span></li>
+										<li><a href="https://youtube.com/" target="_blank"><i class="fa fa-youtube-play"></i></a><span> Youtube</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- top footer area end -->
+			<!-- footer address area start -->
+			<div class="address-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-xs-12">
+							<address>Copyright © <a href="http://bootexperts.com/">BootExperts.</a> All Rights Reserved</address>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer address area end -->
+		</footer>
+		<!-- FOOTER END -->
+
+        <!-- jquery-1.11.3.min js
+		============================================ -->
+        <script src="{{ url_for('static', filename='js/vendor/jquery-1.11.3.min.js') }}"></script>
+
+ 		<!-- bootstrap js
+		============================================ -->
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+   		<!-- owl.carousel.min js
+		============================================ -->
+        <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+
+		<!-- jquery scrollUp js
+		============================================ -->
+        <script src="{{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+
+		<!-- price-slider js
+		============================================ -->
+        <script src="{{ url_for('static', filename='js/price-slider.js') }}"></script>
+
+		<!-- elevateZoom js
+		============================================ -->
+		<script src="{{ url_for('static', filename='js/jquery.elevateZoom-3.0.8.min.js') }}"></script>
+
+		<!-- jquery.bxslider.min.js
+		============================================ -->
+        <script src="{{ url_for('static', filename='js/jquery.bxslider.min.js') }}"></script>
+
+		<!-- mobile menu js
+		============================================ -->
+		<script src="{{ url_for('static', filename='js/jquery.meanmenu.js') }}"></script>
+
+   		<!-- wow js
+		============================================ -->
+        <script src="{{ url_for('static', filename='js/wow.js') }}"></script>
+
+   		<!-- plugins js
+		============================================ -->
+        <script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+
+   		<!-- main js
+		============================================ -->
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<body class="home-eight">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- Add your site or application content here -->
+		<!-- header area start -->
+		<header>
+			<div class="container-fluid">
+				<div class="row">
+					<!-- logo start -->
+					<div class="col-md-6 text-left">
+						<div class="top-logo" style="width:120px; line-height: 60px;">
+							<a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/icis_logo.png') }}" alt="" /></a>
+
+						</div>
+					</div>
+					<!-- logo end -->
+					<!-- top details area start -->
+					<div class="col-md-6 text-right">
+						<div class="top-detail">
+							<!-- language division start -->
+							<div class="disflow">
+								<div class="expand lang-all disflow">
+									<a href="#">Log in</a>
+{#									<ul class="restrain language">#}
+{#										<li><a href="#"><img src="{{ url_for('static', filename='img/country/it.gif') }}" alt="">italiano</a></li>#}
+{#										<li><a href="#"><img src="{{ url_for('static', filename='img/country/nl_nl.gif') }}" alt="">Nederlands</a></li>#}
+{#										<li><a href="#"><img src="{{ url_for('static', filename='img/country/de_de.gif') }}" alt="">Deutsch</a></li>#}
+{#										<li><a href="#"><img src="{{ url_for('static', filename='img/country/en.gif') }}" alt="">English</a></li>#}
+{#									</ul>#}
+								</div>
+								<div class="expand lang-all disflow">
+									<a href="{{ url_for('register') }}">Join</a>
+{#									<ul class="restrain language">#}
+{#										<li><a href="#">€ Eur</a></li>#}
+{#										<li><a href="#">$ USD</a></li>#}
+{#										<li><a href="#">£ GBP</a></li>#}
+{#									</ul>#}
+								</div>
+							</div>
+							<!-- language division end -->
+							<!-- addcart top start -->
+{#							<div class="disflow">#}
+{#								<div class="circle-shopping expand">#}
+{#									<div class="shopping-carts text-right">#}
+{#										<div class="cart-toggler">#}
+{#											<a href="#"><i class="icon-bag"></i></a>#}
+{#											<a href="#"><span class="cart-quantity">2</span></a>#}
+{#										</div>#}
+{#										<div class="restrain small-cart-content">#}
+{#											<ul class="cart-list">#}
+{#												<li>#}
+{#													<a class="sm-cart-product" href="product-details.html">#}
+{#														<img src="{{ url_for('static', filename='img/products/sm-products/cart1.jpg') }}" alt="">#}
+{#													</a>#}
+{#													<div class="small-cart-detail">#}
+{#														<a class="remove" href="#"><i class="fa fa-times-circle"></i></a>#}
+{#														<a href="#" class="edit-btn"><img src="{{ url_for('static', filename='img/btn_edit.gif') }}" alt="Edit Button" /></a>#}
+{#														<a class="small-cart-name" href="product-details.html">Voluptas nulla</a>#}
+{#														<span class="quantitys"><strong>1</strong>x<span>$75.00</span></span>#}
+{#													</div>#}
+{#												</li>#}
+{#												<li>#}
+{#													<a class="sm-cart-product" href="product-details.html">#}
+{#														<img src="{{ url_for('static', filename='img/products/sm-products/cart2.jpg') }}" alt="">#}
+{#													</a>#}
+{#													<div class="small-cart-detail">#}
+{#														<a class="remove" href="#"><i class="fa fa-times-circle"></i></a>#}
+{#														<a href="#" class="edit-btn"><img src="{{ url_for('static', filename='img/btn_edit.gif') }}" alt="Edit Button" /></a>#}
+{#														<a class="small-cart-name" href="product-details.html">Donec ac tempus</a>#}
+{#														<span class="quantitys"><strong>1</strong>x<span>$75.00</span></span>#}
+{#													</div>#}
+{#												</li>#}
+{#											</ul>#}
+{#											<p class="total">Subtotal: <span class="amount">$155.00</span></p>#}
+{#											<p class="buttons">#}
+{#												<a href="checkout.html" class="button">Checkout</a>#}
+{#											</p>#}
+{#										</div>#}
+{#									</div>#}
+{#								</div>#}
+{#							</div>#}
+							<!-- addcart top start -->
+{#							<div class="disflow">#}
+{#								<div class="expand dropps-menu">#}
+{#									<a href="#"><i class="fa fa-align-right"></i></a>#}
+{#									<ul class="restrain language">#}
+{#										<li><a href="login.html">My Account</a></li>#}
+{#										<li><a href="wishlist.html">My Wishlist</a></li>#}
+{#										<li><a href="cart.html">My Cart</a></li>#}
+{#										<li><a href="checkout.html">Checkout</a></li>#}
+{#										<li><a href="#">Testimonial</a></li>#}
+{#										<li><a href="login.html">Log In</a></li>#}
+{#									</ul>#}
+{#								</div>#}
+{#							</div>#}
+						</div>
+					</div>
+					<!-- top details area end -->
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<!-- mainmenu area start -->
+					<!-- mainmenu area end -->
+					<!-- top details area start -->
+					<div class="col-md-13 text-right">
+						<div class="top-detail">
+							<!-- search divition start -->
+							<div class="disflow dflt-src">
+								<div class="header-search expand">
+{#									<div class="search-icon fa fa-search"></div>#}
+{#									<div class="product-search restrain">#}
+										<div class="container nopadding-right">
+											<form action="{{ url_for('search') }}" id="search" method="post">
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- search divition end -->
+						</div>
+					</div>
+					<!-- top details area end -->
+				</div>
+			</div>
+		</header>
+		<!-- header area end -->
+</body>

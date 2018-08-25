@@ -1,0 +1,140 @@
+{% extends "base_search.html" %}
+{% block content %}
+    <div class="main-contact-area">
+        <div class="container" >
+            <div class="row" style ="margin: auto; width: 60%; padding: 10px;">
+                <div class="col-xs-15 col-sm-15 col-md-9 col-lg-9" style ="width: 770px;">
+                    <div class="page-sidebar-area">
+                        <form method="post" class="preference" action="{{ url_for('prefer') }}">
+                            <input style="visibility: hidden" name="user_id" value={{ user }}>
+                            <!-- MilkPowder -->
+{#                            <h2>{{ user }}</h2>#}
+
+                            <aside class="widge-topbar">
+                                <div class="bar-title">
+                                    <div class="bar-ping" style="width:40px;"><img src="{{ url_for('static', filename='img/bar-ping.png') }}" alt=""></div>
+                                    <h2>분유</h2>
+                                </div>
+                                <div class="vote-area">
+
+                                    <p>
+                                        <input type="radio" value="남양" name="milkpowder"><label>남양</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="일동 후디스" name="milkpowder"><label>일동 후디스</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="파스퇴르" name="milkpowder"><label>파스퇴르</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="이이엠마더" name="milkpowder"><label>아이엠마더</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="앱솔루트" name="milkpowder"><label>앱솔루트</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="기타" name="milkpowder"><label>기타</label>&emsp; &emsp;
+                                    </p>
+                                </div>
+                            </aside>
+                            <hr>
+                            <!-- Diaper -->
+                            <aside class="sidebar-content">
+                                <div class="bar-title">
+                                    <div class="bar-ping" style="width:40px;"><img src="{{ url_for('static', filename='img/bar-ping.png') }}" alt=""></div>
+                                    <h2>기저귀</h2>
+                                </div>
+                                <div class="vote-area">
+                                    <p>
+                                        <input type="radio" value="하기스" name="diaper"><label>하기스</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="보솜이" name="diaper"><label>보솜이</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="베피스" name="diaper"><label>베피스</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="국내" name="diaper"><label>국내 브랜드 전체</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="해외" name="diaper"><label>해외 브랜드 전체</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="기타" name="diaper"><label>기타</label>&emsp; &emsp;
+                                    </p>
+
+                                </div>
+                            </aside>
+                            <hr>
+                            <!-- Toy -->
+                            <div class="community-vote single-sidebar">
+                                <div class="bar-title">
+                                    <div class="bar-ping" style="width:40px;"><img src="{{ url_for('static', filename='img/bar-ping.png') }}" alt=""></div>
+                                    <h2>장난감</h2>
+                                </div>
+                                <div class="vote-area">
+                                    <p>
+                                        <input type="radio" value="감각발달완구" name="toy"><label>감각발달완구</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="아기체육관" name="toy"><label>아기체육관</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="러닝홈/아기놀이" name="toy"><label>러닝홈/아기놀이터</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="아기걸음마" name="toy"><label>아기걸음마</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="모빌" name="toy"><label>모빌</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="기타" name="toy"><label>장난감 전체</label>&emsp; &emsp;
+                                    </p>
+
+                                </div>
+                            </div>
+                            <!-- Snack -->
+                            <hr>
+                            <div class="community-vote single-sidebar">
+                                <div class="bar-title">
+                                    <div class="bar-ping" style ="width:40px;"><img src="{{ url_for('static', filename='img/bar-ping.png') }}" alt=""></div>
+                                    <h2>과자</h2>
+                                </div>
+                                <div class="vote-area">
+                                    <p>
+                                        <input type="radio" value="베베비앙" name="snack"><label>베베비앙</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="후디스" name="snack"><label>후디스</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="파스퇴르" name="snack"><label>파스퇴르</label>&emsp; &emsp;
+                                    </p>
+                                    <p>
+                                        <input type="radio" value="기타" name="snack"><label>기타</label>&emsp; &emsp;
+                                    </p>
+
+{#                                    <a href = "#" class="add-tag-btn" style = "width:63px; line-height:30px;">제출하기</a>#}
+
+
+                                    <!--form submit 부분 -->
+                                    <div class="form-action">
+                                        <a class="actions-log" style = "width:63px; line-height:30px;">
+                                            <input type="submit" name="prefer" value="제출하기">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- contact-details end -->
+{% endblock content %}

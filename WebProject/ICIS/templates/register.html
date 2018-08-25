@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="customer-login-area">
+			<div class="container">
+				<div class="row" style="margin-left: 300px;">
+					<div class="col-md-8 col-xs-12">
+						<div class="customer-register my-account">
+							<form method="post" class="register" action="{{ url_for('register') }}">
+								<div class="form-fields">
+									<h2>Register</h2>
+								    <p class="form-row form-row-wide" >
+										<label for="reg_email"> 아이디 <span class="required">*</span></label>
+{#										<input class="input-text" name="id" id="reg_email" value="">#}
+                                        {{ form.id }}
+									</p>
+									<p class="form-row form-row-wide">
+										<label for="reg_password">비밀번호 <span class="required">*</span></label>
+{#										<input type="password" class="input-text" name="password" id="reg_password">#}
+                                        {{ form.password }}
+
+									</p>
+                                    <p class="form-row form-row-wide">
+										<label for="reg_password">비밀번호 확인<span class="required">*</span></label>
+										<input type="password" class="input-text" name="password_check" id="reg_password_check">
+									</p>
+                                    <p class="form-row form-row-wide">
+										<label for="reg_password">아이 이름<span class="required">*</span></label>
+{#										<input class="input-text" name="babyName" id="reg_password">#}
+                                        {{ form.babyName }}
+
+									</p>
+                                    <p class="form-row form-row-wide">
+										<label for="reg_password">아이 생년월일 <span class="required">*</span></label>
+{#										<input class="input-text" type="date" name="birthDate" id="reg_password">#}
+                                        {{ form.birthDate(class="dtpick") }}
+									</p>
+									<div style="left: -999em; position: absolute;">
+										<label for="trap">Anti-spam</label>
+										<input type="text" name="email_2" id="trap" tabindex="-1">
+									</div>
+								</div>
+								<div class="form-action">
+									<div class="actions-log">
+										<input type="submit" class="button" name="register" value="Register">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+{% endblock content %}
